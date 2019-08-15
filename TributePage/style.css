@@ -1,0 +1,101 @@
+html {
+	background-color: black;
+	height: 100%;
+}
+
+body {
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 100%;
+}
+
+#main {
+	display: grid;
+	grid-template-areas: 
+	". header ."
+	". image ."
+	". content ."
+	". comics ."
+	". link .";
+	grid-template-columns: 20rem auto 20rem;
+}
+
+#title {
+	background-color: #cc4224;
+	border: black 2px solid;
+	color: #f3d403;
+	text-align: center;
+	grid-area: header;
+	font-family: 'Marvel', sans-serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+
+}
+
+#img-div {
+	background-color: #2a75b3;
+	border: black 2px solid;
+	grid-area: image;
+	text-align: center;
+
+}
+
+#img-caption {
+	font-family: courier;
+	font-style: italic;
+	font-size: 1.2rem;
+	padding: 0;
+}
+
+#tribute-info {
+	background-color: #cc4224;
+	border: 2px black solid;
+	color: #f3d403;
+	grid-area: content;
+	font-family: arial;
+	font-size: 1.25rem;
+	height: auto;
+	padding: 3px;
+	overflow-wrap: normal;
+}
+
+#link-div {
+	background-color: green;
+	border: 2px black solid;
+	grid-area: link;
+	font-size: 1.5rem;
+}
+
+a:hover {
+	color: white;
+}
+
+#footer {
+	background-color: black;
+	color: white;
+	grid-area: footer;
+	text-align: center;
+	width: 100%;
+}
+
+img {
+	width: 35rem;
+	height: auto;
+	border-radius: 100%;
+	border: 3px black dashed;
+}
+
+#header2 {
+	font-family: marvel;
+	font-size: 2rem;
+}
+
+li {
+	font-family: arial;
+	padding: .3rem;
+}
+
+a {
+	text-decoration-line: none;
+	font-weight: bold;
+}
